@@ -1,6 +1,9 @@
 services:
   api:
     build: .
+    environment:
+      - GOOGLE_GENAI_USE_VERTEXAI=FALSE
+      - GOOGLE_API_KEY=$GOOGLE_API_KEY
     restart: always
     ports:
       - "9005:8000"
