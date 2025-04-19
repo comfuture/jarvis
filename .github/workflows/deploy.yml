@@ -14,7 +14,7 @@ jobs:
         with:
           docker_host: ssh://ubuntu@144.24.83.69
           context_name: remote
-          ssh_key: ${{ secrets.CHUNSIK_SSH_KEY }}
+          ssh_key: ${{ secrets.SSH_KEY }}
       - name: skip strict host key checking
         run: |
           echo "Host *" >> ~/.ssh/config
