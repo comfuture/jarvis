@@ -1,0 +1,7 @@
+[project]
+description = "Everyday AI Assistant"
+name = "jarvis"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["google-adk>=0.2.0"]
